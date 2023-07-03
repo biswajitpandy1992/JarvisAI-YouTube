@@ -1,9 +1,10 @@
 import os
 import openai
-from config import apikey
+from config import apikey           
 
 openai.api_key = apikey
 
+### TEsting #########
 response = openai.Completion.create(
   model="text-davinci-003",
   prompt="Write an email to my boss for resignation?",
